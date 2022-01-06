@@ -315,9 +315,9 @@ span {
 @media (min-width: 320px) {
   .start {
     position: absolute;
-    top: 100px;
+    top: 200px;
     color: white;
-    font-size: 5rem;
+    font-size: 2.4rem;
     /* font-size: 200px; */
     /* z-index: 1; */
     z-index: 2;
@@ -334,16 +334,17 @@ span {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   .start {
     position: absolute;
-    top: 20px;
+    top: 270px;
     color: white;
-    font-size: 5.8rem;
+    font-size: 3.8rem;
     /* font-size: 200px; */
     z-index: 2;
     display: inline-block;
   }
   #start_btn {
-    left: 350px;
+    left: 320px;
     bottom: 400px;
+    font-size: 35px;
   }
 }
 
@@ -353,7 +354,7 @@ span {
     position: absolute;
     top: 200px;
     color: white;
-    font-size: 5rem;
+    font-size: 5.5rem;
     /* font-size: 200px; */
     z-index: 1;
     display: inline-block;
