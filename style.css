@@ -329,35 +329,37 @@ span {
     bottom: 400px;
   }
 }
+
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   .start {
     position: absolute;
-    top: 200px;
+    top: 20px;
     color: white;
     font-size: 5.8rem;
     /* font-size: 200px; */
-    z-index: 1;
+    z-index: 2;
     display: inline-block;
   }
   #start_btn {
-    left: 450px;
+    left: 350px;
     bottom: 400px;
   }
 }
+
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   .start {
     position: absolute;
-    top: 190px;
+    top: 200px;
     color: white;
-    font-size: 5.8rem;
+    font-size: 5rem;
     /* font-size: 200px; */
     z-index: 1;
     display: inline-block;
   }
   #start_btn {
-    left: 450px;
+    left: 400px;
     bottom: 400px;
   }
 }
@@ -380,9 +382,9 @@ span {
 @media (min-width: 1025px) {
   .start {
     position: absolute;
-    top: 100px;
+    top: 0px;
     color: white;
-    font-size: 9rem;
+    font-size: 8rem;
     /* font-size: 200px; */
     z-index: 1;
     display: inline-block;
