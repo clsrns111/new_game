@@ -153,14 +153,6 @@ canvas {
   }
 }
 
-.modal {
-  color: white;
-}
-.modal h2 {
-  text-align: center;
-  position: relative;
-  top: -70px;
-}
 .score_text {
   position: absolute;
   top: 0;
@@ -206,118 +198,12 @@ canvas {
   text-decoration-thickness: 5px;
 }
 
-.modal {
-  visibility: hidden;
-  z-index: 3;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 80px;
-  padding-bottom: 120px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  color: black;
-  border: 1px solid black;
-  border-top: 40px solid #60d8e5;
-}
-
-.modal_text {
-  font-size: 20px;
-  position: relative;
-  top: -40px;
-  padding: 0;
-}
-
-#restart {
-  position: relative;
-  display: block;
-  bottom: -50px;
-  margin: 0 auto;
-  border: none;
-  background-color: #0d8593;
-  color: white;
-  padding: 15px 35px;
-  font-size: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-span {
-  font-family: "Gemunu Libre", sans-serif;
-}
-
-.item_container div {
-  margin: 20px;
-  position: relative;
-  font-family: "Gemunu Libre", sans-serif;
-  border: 1px solid black;
-  width: 120px;
-  height: 150px;
-  display: inline-block;
-  cursor: pointer;
-}
-.item_container div:hover {
-  background-color: rgba(102, 99, 99, 0.151);
-}
-.item_container h4 {
-  text-align: center;
-  text-decoration: underline;
-}
-
-.desc {
-  text-align: center;
-}
-
-.item_desc {
-  opacity: 0.7;
-  color: red;
-}
-
-.t {
-  font-size: 17px;
-  font-weight: 600;
-  color: #0d8593;
-}
-
-.item_container small {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-#power,
-#speed,
-#multi {
-  text-align: center;
-  font-size: 50px;
-  display: block;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-#power {
-  color: rgb(228, 113, 113);
-}
-#speed {
-  color: rgb(206, 206, 102);
-}
-#multi {
-  font-size: 30px;
-}
-#multi i {
-  color: rgb(192, 189, 189);
-  padding: 10px;
-}
-
 @media (min-width: 320px) {
   .start {
     position: absolute;
-    top: 200px;
+    top: 100px;
     color: white;
-    font-size: 2.4rem;
+    font-size: 5rem;
     /* font-size: 200px; */
     /* z-index: 1; */
     z-index: 2;
@@ -328,23 +214,263 @@ span {
     left: 280px;
     bottom: 400px;
   }
+  .modal {
+    visibility: hidden;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: black;
+    border: 1px solid black;
+    border-top: 40px solid #60d8e5;
+  }
+
+  .modal h2 {
+    text-align: center;
+    position: relative;
+    top: -70px;
+  }
+
+  .modal_text {
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    padding: 0;
+  }
+
+  #restart {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: #0d8593;
+    color: white;
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+  }
+
+  span {
+    font-family: "Gemunu Libre", sans-serif;
+  }
+
+  .item_container div {
+    margin: 20px;
+    position: relative;
+    font-family: "Gemunu Libre", sans-serif;
+    border: 1px solid black;
+    width: 50px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0;
+  }
+
+  .item_container div:hover {
+    background-color: rgba(102, 99, 99, 0.151);
+  }
+
+  .item_container h4 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  .item_desc {
+    opacity: 0.7;
+    color: red;
+  }
+
+  .t {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0d8593;
+  }
+
+  .item_container small {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #power,
+  #speed,
+  #multi {
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .fas.fa-circle {
+    font-size: 10px;
+    margin-bottom: 100px;
+  }
+
+  #power {
+    color: rgb(228, 113, 113);
+  }
+  #speed {
+    color: rgb(206, 206, 102);
+  }
+  #multi {
+    font-size: 30px;
+  }
+  #multi i {
+    color: rgb(192, 189, 189);
+    padding: 2px;
+  }
+  #multi {
+    display: flex;
+    height: 20px;
+  }
 }
 
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   .start {
     position: absolute;
-    top: 270px;
+    top: 20px;
     color: white;
-    font-size: 3.8rem;
+    font-size: 5.8rem;
     /* font-size: 200px; */
     z-index: 2;
     display: inline-block;
   }
   #start_btn {
-    left: 320px;
-    bottom: 400px;
-    font-size: 35px;
+    left: 350px;
+    bottom: 100px;
+  }
+
+  .modal {
+    visibility: hidden;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: black;
+    border: 1px solid black;
+    border-top: 40px solid #60d8e5;
+  }
+
+  .modal h2 {
+    text-align: center;
+    position: relative;
+    top: -70px;
+  }
+
+  .modal_text {
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    padding: 0;
+  }
+
+  #restart {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: #0d8593;
+    color: white;
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+  }
+
+  span {
+    font-family: "Gemunu Libre", sans-serif;
+  }
+
+  .item_container div {
+    margin: 10px;
+    position: relative;
+    font-family: "Gemunu Libre", sans-serif;
+    border: 1px solid black;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0;
+  }
+  .item_container div:hover {
+    background-color: rgba(102, 99, 99, 0.151);
+  }
+  .item_container h4 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  .item_desc {
+    opacity: 0.7;
+    color: red;
+  }
+
+  .t {
+    font-size: 17px;
+    font-weight: 600;
+    color: #0d8593;
+  }
+
+  .item_container small {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #power,
+  #speed,
+  #multi {
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .fas.fa-circle {
+    font-size: 15px;
+  }
+
+  #power {
+    color: rgb(228, 113, 113);
+  }
+  #speed {
+    color: rgb(206, 206, 102);
+  }
+  #multi {
+    font-size: 30px;
+  }
+  #multi i {
+    color: rgb(192, 189, 189);
+    padding: 10px;
+  }
+  #multi {
+    height: 40px;
   }
 }
 
@@ -352,15 +478,15 @@ span {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   .start {
     position: absolute;
-    top: 200px;
+    top: 0px;
     color: white;
-    font-size: 5.5rem;
+    font-size: 5.8rem;
     /* font-size: 200px; */
     z-index: 1;
     display: inline-block;
   }
   #start_btn {
-    left: 400px;
+    left: 450px;
     bottom: 400px;
   }
 }
@@ -396,6 +522,78 @@ span {
   }
   /* big landscape tablets, laptops, and desktops */
 }
+
+@media (min-width: 1080px) {
+  .item_container div {
+    margin: 10px;
+    position: relative;
+    font-family: "Gemunu Libre", sans-serif;
+    border: 1px solid black;
+    width: 120px;
+    height: 150px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0;
+  }
+  .item_container div:hover {
+    background-color: rgba(102, 99, 99, 0.151);
+  }
+  .item_container h4 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  .item_desc {
+    opacity: 0.7;
+    color: red;
+  }
+
+  .t {
+    font-size: 17px;
+    font-weight: 600;
+    color: #0d8593;
+  }
+
+  .item_container small {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #power,
+  #speed,
+  #multi {
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .fas.fa-circle {
+    font-size: 15px;
+  }
+
+  #power {
+    color: rgb(228, 113, 113);
+  }
+  #speed {
+    color: rgb(206, 206, 102);
+  }
+  #multi {
+    font-size: 30px;
+  }
+  #multi i {
+    color: rgb(192, 189, 189);
+    padding: 10px;
+  }
+}
+
 @media (min-width: 1281px) {
   .start {
     position: absolute;
